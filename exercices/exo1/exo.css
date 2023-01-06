@@ -1,7 +1,7 @@
 body {
-    width:100vw;
-    height:100vh;
-    padding:0;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
     display: grid;
     grid-template-rows: 0.1fr 0.5fr 0.5fr;
     grid-template-columns: 1fr 1fr 1fr;
@@ -15,15 +15,15 @@ body h1 {
 }
 
 #box1 {
-    width:50%;
-    height:50%;
+    width: 50%;
+    height: 50%;
     background-color: red;
     margin-bottom: 1rem;
 }
 
 #box2 {
-    width:8vh;
-    height:8vh;
+    width: 8vh;
+    height: 8vh;
     border-radius: 50%;
     background: linear-gradient(red, blue);
     margin-bottom: 1rem;
@@ -34,25 +34,25 @@ body h1 {
 }
 
 #ex4 table {
-    width:100%;
+    width: 100%;
 }
 
 #ex4 table th {
-    width:45%;
+    width: 45%;
 }
 
 #ex4 table td {
-    width:45%;
+    width: 45%;
 }
 
 #stage {
-    width:100%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 1rem;
 }
 
-#stage > section {
+#stage>section {
     height: 15vh;
 }
 
@@ -66,4 +66,53 @@ body h1 {
 
 #green {
     background-color: green;
+}
+
+
+#ball {
+    width: 8vh;
+    height: 8vh;
+    border-radius: 50%;
+    background: linear-gradient(red, purple, blue);
+    margin-bottom: 1rem;
+
+}
+
+.animation {
+    animation-name: moveLeft, rotate;
+    animation-delay: 2s;
+    animation-duration: 5s;
+}
+
+
+@keyframes moveLeft {
+    0% {}
+    20% {
+
+        transform: translateX(5vh) rotate(60deg);
+    }
+
+    40% {
+
+        transform: translateX(10vh) rotate(120deg);
+
+    }
+
+    60% {
+
+
+        transform: translateX(15vh) rotate(180deg);
+    }
+
+
+    80% {
+
+        transform: translateX(20vh)rotate(260deg);
+
+    }
+    100% {
+
+        transform: translateX(25vh) rotate(320deg);
+
+    }
 }
