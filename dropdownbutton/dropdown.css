@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#dropdown-btn {
+    width:13vw;
+    border-radius: 4px;
+    padding: 1vh 0vw;
+}
+
+#dropdown-section {
+    width:13vw;
+}
+
+#dropdown-section ul {
+    list-style-type: none;
+    text-align:center;
+    border: 1px solid black;
+    border-radius: 0 0 5px 5px;
+}
+
+#dropdown-section ul li {
+ margin: 0.5vh 0;
+}
+
+.hide {
+    display: none;
+}
